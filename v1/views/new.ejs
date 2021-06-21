@@ -1,0 +1,29 @@
+<%- include ('partials/header') %>
+
+<div class="container d-flex justify-content-center" style=margin-top:60px>
+
+    <div>
+    <h1>Add Campgrounds here</h1>
+    <a href="/campgrounds">Go back</a>
+    <hr>
+    <div>
+        <form method="POST" action="/campgrounds">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="enter name" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="enter url here" name="image" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </div>
+            
+        </form>
+    </div>
+</div>
+        
+    
+
+
+
+

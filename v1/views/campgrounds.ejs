@@ -1,0 +1,41 @@
+<%- include ('partials/header') %>
+<div class="container" style=margin-top:57px ;>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid px-4">
+            <h1 class="display-4">All the campgrounds are here</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            
+            <a class="btn btn-lg btn-primary" href="campgrounds/new">add new capmground</a>
+        </div>
+    </div>
+    
+    
+    <div class="row">
+        <% campgrounds.forEach(function(x){%>
+            <div class="col-lg-4">
+                
+                    <img src="<%= x.image %>" class="img-thumbnail">
+                    <caption>
+                        <%= x.name %>
+                    </caption>
+                
+                
+                    
+                
+            </div>
+    
+    
+  
+    <% }) %>
+    </div>
+
+</div>
+
+
+    
+
+
+
+
+
+
